@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/app_bar.dart';
+
 class Landing_Page extends StatelessWidget {
   const Landing_Page({super.key});
 
@@ -7,20 +9,21 @@ class Landing_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      height: double.infinity,
-      width: double.infinity,
-      decoration: const BoxDecoration(
-          image: DecorationImage
+            height: double.infinity,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+                image: DecorationImage
 // NetworkImage
-              (
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                    'assets/images/bkg.png',
-                  ))),
-      //  child: Column(
-      // children:  const [Web_AppBar],
-      // )
-    ));
+                    (
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                          'assets/images/bkg.png',
+                        ))),
+            child: Column(
+              children: const [
+                Web_App_Bar(),
+              ],
+            )));
     // )
   }
 }

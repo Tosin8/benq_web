@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 
-class Web_AppBar extends StatefulWidget {
-  const Web_AppBar({super.key});
+class Web_App_Bar extends StatefulWidget {
+  const Web_App_Bar({super.key});
 
   @override
-  State<Web_AppBar> createState() => _Web_AppBarState();
+  State<Web_App_Bar> createState() => _Web_App_BarState();
 }
 
-class _Web_AppBarState extends State<Web_AppBar> {
+class _Web_App_BarState extends State<Web_App_Bar> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+        child: Row(
+      children: const [
+        Text('Benq'),
+        Text('Overview'),
+        Text('Spec'),
+        Text('Product'),
+      ],
+    ));
   }
 }
