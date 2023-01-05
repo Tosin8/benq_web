@@ -26,4 +26,10 @@ var nav2 = Container(
     Text('Accounts>', style: Text2),
   ]),
 );
- 
+
+// Main Body
+var ProductDetails = Column(children: const [
+  Text('Benq NTH-100', style: Text2),
+  Text('Hear the music, not the noise', style: Text3),
+  Text('35.00', style: Text1),
+]);
