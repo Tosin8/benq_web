@@ -17,15 +17,18 @@ class _Web_App_BarState extends State<Web_App_Bar> {
         const Text('benq'),
       ],
     ));
-    return Container(
-        child: Row(
-      children: [
-        Logo,
-        const SizedBox(width: 30),
-        const Text('Overview'),
-        const Text('Spec'),
-        const Text('Product'),
-      ],
-    ));
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 25),
+      child: Container(
+          child: Row(
+        children: [
+          Logo,
+          const SizedBox(width: 30),
+          const Text('Overview'),
+          const Text('Spec'),
+          const Text('Product'),
+        ],
+      )),
+    );
   }
 }
