@@ -22,7 +22,7 @@ class _Web_App_BarState extends State<Web_App_Bar> {
       child: Container(
           child: Row(
         children: [
-          Logo,
+          Padding(padding: const EdgeInsets.only(left: 30), child: Logo),
           const SizedBox(width: 30),
           const Text('Overview'),
           const Text('Spec'),
