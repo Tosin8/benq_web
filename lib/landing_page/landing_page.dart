@@ -22,11 +22,12 @@ class Landing_Page extends StatelessWidget {
                           'assets/images/bkg.png',
                         ))),
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 30),
+              padding: const EdgeInsets.only(left: 60),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Web_App_Bar(),
+                  Web_Main_Body(),
                 ],
               ),
             )));

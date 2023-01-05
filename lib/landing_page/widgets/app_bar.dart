@@ -16,7 +16,8 @@ class _Web_App_BarState extends State<Web_App_Bar> {
         child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Padding(padding: const EdgeInsets.only(left: 30), child: WebLogo),
+        Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30), child: WebLogo),
         const SizedBox(width: 60),
         nav1,
         const SizedBox(width: 60),
