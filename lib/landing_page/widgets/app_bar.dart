@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../const/const.dart';
+
 class Web_App_Bar extends StatefulWidget {
   const Web_App_Bar({super.key});
 
@@ -14,7 +16,7 @@ class _Web_App_BarState extends State<Web_App_Bar> {
         child: Row(
       children: [
         Image.asset('assets/logo.png'),
-        const Text('benq'),
+        const Text('benq', style: Text2),
       ],
     ));
     return Padding(
@@ -23,7 +25,7 @@ class _Web_App_BarState extends State<Web_App_Bar> {
           child: Row(
         children: [
           Padding(padding: const EdgeInsets.only(left: 30), child: Logo),
-          const SizedBox(width: 30),
+          const SizedBox(width: 60),
           const Text('Overview'),
           const Text('Spec'),
           const Text('Product'),
