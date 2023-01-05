@@ -12,25 +12,34 @@ class Web_App_Bar extends StatefulWidget {
 class _Web_App_BarState extends State<Web_App_Bar> {
   @override
   Widget build(BuildContext context) {
-    var Logo = Container(
-        child: Row(
-      children: [
-        Image.asset('assets/logo.png'),
-        const Text('benq', style: Text2),
-      ],
-    ));
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 25),
       child: Container(
           child: Row(
         children: [
-          Padding(padding: const EdgeInsets.only(left: 30), child: Logo),
+          Padding(padding: const EdgeInsets.only(left: 30), child: WebLogo),
           const SizedBox(width: 60),
-          const Text('Overview'),
-          const Text('Spec'),
-          const Text('Product'),
+          nav1,
         ],
       )),
     );
   }
 }
+
+var WebLogo = Container(
+    child: Row(
+  children: [
+    Image.asset('assets/logo.png'),
+    const Text('benq', style: Text2),
+  ],
+));
+var nav1 = Container(
+    child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: const [
+    Text('Overview'),
+    Text('Spec'),
+    Text('Reviews'),
+    Text('Product'),
+  ],
+));
