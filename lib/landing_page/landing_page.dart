@@ -1,3 +1,4 @@
+import 'package:benq_web/landing_page/widgets/mainBody.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/app_bar.dart';
@@ -27,7 +28,7 @@ class Landing_Page extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Web_App_Bar(),
-                  Web_Main_Body(),
+                  Main_Content(),
                 ],
               ),
             )));
