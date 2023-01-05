@@ -12,6 +12,8 @@ class Landing_Page extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             decoration: const BoxDecoration(
+
+                //Setting up background image.
                 image: DecorationImage
 // NetworkImage
                     (
@@ -19,10 +21,14 @@ class Landing_Page extends StatelessWidget {
                         image: AssetImage(
                           'assets/images/bkg.png',
                         ))),
-            child: Column(
-              children: const [
-                Web_App_Bar(),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 30),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Web_App_Bar(),
+                ],
+              ),
             )));
     // )
   }
