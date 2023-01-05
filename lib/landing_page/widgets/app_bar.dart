@@ -10,17 +10,18 @@ class Web_App_Bar extends StatefulWidget {
 class _Web_App_BarState extends State<Web_App_Bar> {
   @override
   Widget build(BuildContext context) {
+    var Logo = Container(
+        child: Row(
+      children: [
+        Image.asset('assets/logo.png'),
+        const Text('benq'),
+      ],
+    ));
     return Container(
         child: Row(
       children: [
-        Container(
-          child: 
-          Row(children: const [
-            Image(image: 'assets/logo.png'). 
-            Text('benq'), 
-          ],)
-        )
-        const Text('Benq'),
+        Logo,
+        const SizedBox(width: 30),
         const Text('Overview'),
         const Text('Spec'),
         const Text('Product'),
